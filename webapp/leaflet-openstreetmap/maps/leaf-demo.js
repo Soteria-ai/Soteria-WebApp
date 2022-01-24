@@ -11,6 +11,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 L.geoJSON(kelantan_states).addTo(map);
+L.geoJSON(johor_states).addTo(map);
 
 var myURL = jQuery('script[src$="leaf-demo.js"]')
   .attr("src")
