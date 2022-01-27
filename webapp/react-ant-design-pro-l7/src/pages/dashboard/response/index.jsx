@@ -3,7 +3,7 @@ import { useRequest } from 'umi';
 import { Gauge, WordCloud, Liquid, RingProgress } from '@ant-design/charts';
 import { GridContent } from '@ant-design/pro-layout';
 import numeral from 'numeral';
-import Map from './components/Map';
+import MapDisasterResponse from './components/MapDisasterResponse';
 import ActiveChart from './components/ActiveChart';
 import { queryTags } from './service';
 import styles from './style.less';
@@ -53,7 +53,7 @@ const Monitor = () => {
                 </Col>
               </Row> */}
               <div className={styles.mapChart}>
-                <Map />
+                <MapDisasterResponse />
               </div>
             </Card>
           </Col>
