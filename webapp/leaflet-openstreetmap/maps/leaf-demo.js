@@ -10,45 +10,51 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   subdomains: ["a", "b", "c"],
 }).addTo(map);
 
-// L.geoJSON(kelantan_states).addTo(map);
-// L.geoJSON(terengganu_states).addTo(map);
-// L.geoJSON(pahang_states).addTo(map);
-// L.geoJSON(johor_states).addTo(map);
-L.geoJSON(kelantan_school).addTo(map);
-L.geoJSON(pahang_school).addTo(map);
-L.geoJSON(terengganu_school).addTo(map);
+// Array for all boundaries to add into leaflet
+boundary = [
+  //kelantan_states,
+  //terengganu_states,
+  //pahang_states,
+  //johor_states,
+  kelantan_school,
+  pahang_school,
+  terengganu_school,
+];
 
-var myURL = jQuery('script[src$="leaf-demo.js"]')
-  .attr("src")
-  .replace("leaf-demo.js", "");
-
-var myIcon = L.icon({
-  iconUrl: myURL + "images/pin24.png",
-  iconRetinaUrl: myURL + "images/pin48.png",
-  iconSize: [29, 24],
-  iconAnchor: [9, 21],
-  popupAnchor: [0, -14],
-});
-
-for (var i = 0; i < markers.length; ++i) {
-  L.marker([markers[i].lat, markers[i].lng], { icon: myIcon })
-    .bindPopup(
-      '<a href="' +
-        markers[i].url +
-        '" target="_blank">' +
-        markers[i].name +
-        "</a>"
-    )
-    .addTo(map);
+for (let i = 0; i < boundary.length; i++) {
+  L.geoJSON(boundary[i]).addTo(map);
+  L.geoJSON(boundary[i], {
+    onEachFeature: function (feature, layer) {
+      layer.bindPopup(
+        "<h1>" +
+          feature.properties.amenity +
+          "</h1><p>Name: " +
+          feature.properties.name +
+          "</p>"
+      );
+    },
+  }).addTo(map);
 }
 
-// for (var i = 0; i < kelantan_states.length; ++i) {
-//   L.marker([kelantan_states[i].lat, kelantan_states[i].lng])
+// var myURL = jQuery('script[src$="leaf-demo.js"]')
+//   .attr("src")
+//   .replace("leaf-demo.js", "");
+
+// var myIcon = L.icon({
+//   iconUrl: myURL + "images/pin24.png",
+//   iconRetinaUrl: myURL + "images/pin48.png",
+//   iconSize: [29, 24],
+//   iconAnchor: [9, 21],
+//   popupAnchor: [0, -14],
+// });
+
+// for (var i = 0; i < markers.length; ++i) {
+//   L.marker([markers[i].lat, markers[i].lng], { icon: myIcon })
 //     .bindPopup(
 //       '<a href="' +
-//         kelantan_states[i].url +
+//         markers[i].url +
 //         '" target="_blank">' +
-//         kelantan_states[i].name +
+//         markers[i].name +
 //         "</a>"
 //     )
 //     .addTo(map);
