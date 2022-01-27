@@ -10,10 +10,13 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   subdomains: ["a", "b", "c"],
 }).addTo(map);
 
-L.geoJSON(kelantan_states).addTo(map);
-L.geoJSON(terengganu_states).addTo(map);
-L.geoJSON(pahang_states).addTo(map);
-L.geoJSON(johor_states).addTo(map);
+// L.geoJSON(kelantan_states).addTo(map);
+// L.geoJSON(terengganu_states).addTo(map);
+// L.geoJSON(pahang_states).addTo(map);
+// L.geoJSON(johor_states).addTo(map);
+L.geoJSON(kelantan_school).addTo(map);
+L.geoJSON(pahang_school).addTo(map);
+L.geoJSON(terengganu_school).addTo(map);
 
 var myURL = jQuery('script[src$="leaf-demo.js"]')
   .attr("src")
