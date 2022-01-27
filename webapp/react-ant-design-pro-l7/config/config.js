@@ -70,7 +70,7 @@ export default defineConfig({
       routes: [
         {
           path: '/dashboard',
-          redirect: '/dashboard/analysis',
+          redirect: '/dashboard/response',
         },
         // {
         //   name: 'analysis',
@@ -314,7 +314,7 @@ export default defineConfig({
     // },
     {
       path: '/',
-      redirect: '/dashboard/analysis',
+      redirect: '/dashboard/response',
     },
     {
       component: '404',
