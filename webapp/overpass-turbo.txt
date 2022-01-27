@@ -1,0 +1,2 @@
+# Search School in Terrangganu
+amenity=school in "Terengganu"
