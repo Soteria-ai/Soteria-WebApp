@@ -1,11 +1,6 @@
 import * as React from 'react';
-import { HeatmapLayer, AMapScene, MapboxScene, Scene, PointLayer, LineLayer } from '@antv/l7-react';
-// import { Scene, PointLayer } from '@antv/l7';
-// import { GaodeMap } from '@antv/l7-maps';s
+import { AMapScene, LineLayer } from '@antv/l7-react';
 import { PageLoading } from '@ant-design/pro-layout';
-// import kelantan_school from '../../../../../map-data/kelantan_school.json'
-// import pahang_school from '../../../../../map-data/pahang_school.json'
-// import terengganu_school from '../../../../../map-data/terengganu_school.json'
 import east_coast_school from '../../../../../map-data/east_coast_school.json'
 
 const colors = ['#eff3ff', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#084594'];
