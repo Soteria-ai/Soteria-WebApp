@@ -20,6 +20,9 @@ jobs:
 
       - name: Build 🔧
         run: |
+          ls
+          cd webapp
+          cd react-ant-design-pro-l7
           npm run build
           
       - name: Deploy 🚀
