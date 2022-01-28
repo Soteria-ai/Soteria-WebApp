@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AMapScene, LineLayer } from '@antv/l7-react';
+import { MapboxScene, LineLayer } from '@antv/l7-react';
 import { PageLoading } from '@ant-design/pro-layout';
 import east_coast_school from '../../../../../map-data/east_coast_school.json';
 
@@ -38,7 +38,7 @@ export default class MapDisasterResponse extends React.Component {
     return loading === false ? (
       <PageLoading />
     ) : (
-      <AMapScene
+      <MapboxScene
         map={{
           center: [102.201689, 3.868114],
           pitch: 0,
@@ -79,7 +79,7 @@ export default class MapDisasterResponse extends React.Component {
             }}
           />
         )}
-      </AMapScene>
+      </MapboxScene>
     );
   }
 }
