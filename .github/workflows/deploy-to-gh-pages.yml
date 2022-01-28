@@ -16,7 +16,7 @@ jobs:
         run: |
           cd webapp
           cd react-ant-design-pro-l7
-          npm ci
+          sudo npm ci
 
       - name: Build 🔧
         run: |
