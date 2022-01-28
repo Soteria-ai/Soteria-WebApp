@@ -40,10 +40,10 @@ export default class MapDisasterResponse extends React.Component {
     ) : (
       <MapboxScene
         map={{
-          center: [102.201689, 3.868114],
+          center: [102.859388, 4.479304],
           pitch: 0,
           style: 'dark',
-          zoom: 6,
+          zoom: 6.3,
         }}
         style={{
           position: 'absolute',
