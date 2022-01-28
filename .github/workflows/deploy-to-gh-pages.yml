@@ -34,4 +34,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BASE_BRANCH: main
           BRANCH: prod
-          FOLDER: webapp/react-ant-design-pro-l7/dist
+          FOLDER: ~/webapp/react-ant-design-pro-l7/dist
