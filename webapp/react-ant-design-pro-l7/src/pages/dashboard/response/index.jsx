@@ -1,4 +1,4 @@
-import { Card, Col, Row, Statistic } from 'antd';
+import { PageHeader, Card, Col, Row, Statistic } from 'antd';
 import { useRequest } from 'umi';
 import { Gauge, WordCloud, Liquid, RingProgress } from '@ant-design/charts';
 import { GridContent } from '@ant-design/pro-layout';
@@ -10,7 +10,7 @@ import styles from './style.less';
 const { Countdown } = Statistic;
 const deadline = Date.now() + 1000 * 60 * 60 * 24 * 2 + 1000 * 30; // Moment is also OK
 
-const Monitor = () => {
+const Response = () => {
   const { loading, data } = useRequest(queryTags);
   const wordCloudData = (data?.list || []).map((item) => {
     return {
@@ -33,7 +33,8 @@ const Monitor = () => {
               marginBottom: 24,
             }}
           >
-            <Card title="First Responder Dashboard" bordered={false}>
+            <PageHeader title="First Responder Dashboard" />
+            <Card title="" bordered={false}>
               {/* <Row>
                 <Col md={6} sm={12} xs={24}>
                   <Statistic
@@ -185,4 +186,4 @@ const Monitor = () => {
   );
 };
 
-export default Monitor;
+export default Response;

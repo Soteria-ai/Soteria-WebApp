@@ -74,6 +74,9 @@ export default class MapDisasterResponse extends React.Component {
             style={{
               opacity: 1,
             }}
+            tooltip={{
+              items: ['name', 'value'],
+            }}
           />
         )}
       </AMapScene>
