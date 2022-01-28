@@ -14,15 +14,18 @@ jobs:
 
       - name: Install 🔧
         run: |
+          ls -la
           cd webapp
           cd react-ant-design-pro-l7
+          ls -la
           npm install --force
 
       - name: Build 🔧
         run: |
-          ls
+          ls -la
           cd webapp
           cd react-ant-design-pro-l7
+          ls -la
           npm run build
           
       - name: Deploy 🚀
@@ -31,4 +34,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BASE_BRANCH: main
           BRANCH: prod
-          FOLDER: dist
+          FOLDER: webapp/react-ant-design-pro-l7/dist
