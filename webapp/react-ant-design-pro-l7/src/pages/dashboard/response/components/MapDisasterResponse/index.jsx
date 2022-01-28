@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { AMapScene, LineLayer } from '@antv/l7-react';
 import { PageLoading } from '@ant-design/pro-layout';
-import east_coast_school from '../../../../../map-data/east_coast_school.json'
+import east_coast_school from '../../../../../map-data/east_coast_school.json';
 
-const colors = ['#eff3ff', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#084594'];
+// const colors = ['#eff3ff', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#084594'];
 
 export default class MapDisasterResponse extends React.Component {
   state = {
