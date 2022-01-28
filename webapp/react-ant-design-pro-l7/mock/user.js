@@ -42,7 +42,7 @@ export default {
     res.send({
       success: true,
       data: {
-        name: 'Visitor',
+        name: 'Admin',
         avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
         userid: '00000001',
         email: 'antdesign@alipay.com',
@@ -119,7 +119,7 @@ export default {
     const { password, username, type } = req.body;
     await waitTime(2000);
 
-    if (password === 'ant.design' && username === 'admin') {
+    if (password === '1234' && username === 'admin') {
       res.send({
         status: 'ok',
         type,
@@ -129,7 +129,7 @@ export default {
       return;
     }
 
-    if (password === 'ant.design' && username === 'user') {
+    if (password === '1234' && username === 'user') {
       res.send({
         status: 'ok',
         type,

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MapboxScene, LineLayer, SceneEvent } from '@antv/l7-react';
+import { MapboxScene, LineLayer } from '@antv/l7-react';
 import { PageLoading } from '@ant-design/pro-layout';
 import east_coast_school from '../../../../../map-data/east_coast_school.json';
 
@@ -79,7 +79,6 @@ export default class MapDisasterResponse extends React.Component {
             }}
           />
         )}
-        <SceneEvent type="click" handler={() => {}} />
       </MapboxScene>
     );
   }
