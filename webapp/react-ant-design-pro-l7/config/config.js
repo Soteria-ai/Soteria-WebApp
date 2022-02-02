@@ -91,10 +91,10 @@ export default defineConfig({
         //   component: './dashboard/workplace',
         // },
         {
-          name: 'response',
+          name: 'dark',
           icon: 'smile',
-          path: '/dashboard/response',
-          component: './dashboard/response',
+          path: '/dashboard/dark',
+          component: './dashboard/dark',
         },
       ],
     },

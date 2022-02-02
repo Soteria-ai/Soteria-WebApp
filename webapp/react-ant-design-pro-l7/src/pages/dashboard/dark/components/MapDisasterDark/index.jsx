@@ -5,7 +5,7 @@ import east_coast_school from '../../../../../map-data/east_coast_school.json';
 
 // const colors = ['#eff3ff', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#084594'];
 
-export default class MapDisasterResponse extends React.Component {
+export default class MapDisasterDark extends React.Component {
   state = {
     data: null,
     grid: null,
