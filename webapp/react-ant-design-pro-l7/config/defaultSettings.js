@@ -9,7 +9,7 @@ const Settings = {
   colorWeak: false,
   title: 'Soteria',
   pwa: false,
-  logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+  logo: '../favicon.ico',
   iconfontUrl: '',
 };
 export default Settings;
