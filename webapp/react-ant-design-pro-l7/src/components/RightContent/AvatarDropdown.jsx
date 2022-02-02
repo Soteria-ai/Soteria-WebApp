@@ -65,7 +65,7 @@ const AvatarDropdown = ({ menu }) => {
 
   const menuHeaderDropdown = (
     <Menu className={styles.menu} selectedKeys={[]} onClick={onMenuClick}>
-      {menu && (
+      {/* {menu && (
         <Menu.Item key="center">
           <UserOutlined />
           Account Center
@@ -77,7 +77,7 @@ const AvatarDropdown = ({ menu }) => {
           Account Settings
         </Menu.Item>
       )}
-      {menu && <Menu.Divider />}
+      {menu && <Menu.Divider />} */}
 
       <Menu.Item key="logout">
         <LogoutOutlined />
