@@ -49,7 +49,7 @@ export const layout = ({ initialState }) => {
     waterMarkProps: {
       content: initialState?.currentUser?.name,
     },
-    footerRender: () => <Footer />,
+    footerRender: () => {}, // <Footer />
     onPageChange: () => {
       const { location } = history; // 如果没有登录，重定向到 login
 
