@@ -119,7 +119,7 @@ export default {
     const { password, username, type } = req.body;
     await waitTime(2000);
 
-    if (password === '1234' && username === 'admin') {
+    if (password === 'nadma1234' && username === 'admin@nadma.gov.my') {
       res.send({
         status: 'ok',
         type,
@@ -129,15 +129,15 @@ export default {
       return;
     }
 
-    if (password === '1234' && username === 'user') {
-      res.send({
-        status: 'ok',
-        type,
-        currentAuthority: 'user',
-      });
-      access = 'user';
-      return;
-    }
+    // if (password === '1234' && username === 'user') {
+    //   res.send({
+    //     status: 'ok',
+    //     type,
+    //     currentAuthority: 'user',
+    //   });
+    //   access = 'user';
+    //   return;
+    // }
 
     if (type === 'mobile') {
       res.send({
