@@ -91,6 +91,18 @@ export default defineConfig({
         //   component: './dashboard/workplace',
         // },
         {
+          name: 'normal',
+          icon: 'smile',
+          path: '/dashboard/normal',
+          component: './dashboard/normal',
+        },
+        {
+          name: 'light',
+          icon: 'smile',
+          path: '/dashboard/light',
+          component: './dashboard/light',
+        },
+        {
           name: 'dark',
           icon: 'smile',
           path: '/dashboard/dark',
@@ -314,7 +326,7 @@ export default defineConfig({
     // },
     {
       path: '/',
-      redirect: '/dashboard/response',
+      redirect: '/dashboard/normal',
     },
     {
       component: '404',
