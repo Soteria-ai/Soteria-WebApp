@@ -22,7 +22,8 @@ const Response = () => {
   return (
     <GridContent>
       <>
-        <Row gutter={24}>
+        <MapDisasterResponse />
+        {/* <Row gutter={24}>
           <Col
             xl={18}
             lg={24}
@@ -34,7 +35,7 @@ const Response = () => {
             }}
           >
             <PageHeader title="First Responder Dashboard" />
-            <Card title="" bordered={false}>
+            <Card title="" bordered={false}> */}
               {/* <Row>
                 <Col md={6} sm={12} xs={24}>
                   <Statistic
@@ -53,11 +54,11 @@ const Response = () => {
                   <Statistic title="每秒交易总额" suffix="元" value={numeral(234).format('0,0')} />
                 </Col>
               </Row> */}
-              <div className={styles.mapChart}>
+              {/* <div className={styles.mapChart}>
                 <MapDisasterResponse />
-              </div>
-            </Card>
-          </Col>
+              </div> */}
+            {/* </Card>
+          </Col> */}
           {/* <Col xl={6} lg={24} md={24} sm={24} xs={24}>
             <Card
               title="活动情况预测"
@@ -93,7 +94,7 @@ const Response = () => {
               />
             </Card>
           </Col> */}
-        </Row>
+        {/* </Row> */}
         {/* <Row gutter={24}>
           <Col
             xl={12}
