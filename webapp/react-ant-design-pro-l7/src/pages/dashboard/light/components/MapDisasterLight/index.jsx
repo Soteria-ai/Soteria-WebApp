@@ -42,7 +42,7 @@ export default class MapDisasterLight extends React.Component {
         map={{
           center: [103.330239, 3.813148],
           pitch: 0,
-          style: 'normal',
+          style: 'light',
           zoom: 12,
         }}
         style={{
