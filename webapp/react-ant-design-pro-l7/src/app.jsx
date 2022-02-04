@@ -3,7 +3,8 @@ import { history, Link } from 'umi';
 import RightContent from '@/components/RightContent';
 import Footer from '@/components/Footer';
 import { currentUser as queryCurrentUser } from './services/ant-design-pro/api';
-import { BookOutlined, LinkOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
+
 const isDev = process.env.NODE_ENV === 'development';
 const loginPath = '/user/login';
 /** 获取用户信息比较慢的时候会展示一个 loading */
@@ -67,6 +68,30 @@ export const layout = ({ initialState }) => {
           //   <BookOutlined />
           //   <span>业务组件文档</span>
           // </Link>,
+          <Button
+            type="primary"
+            shape="round"
+            size="large"
+            style={{ background: '#8EF69E', borderColor: '#8EF69E', color: 'black' }}
+          >
+            Add Shelter Center
+          </Button>,
+          <Button
+            type="primary"
+            shape="round"
+            size="large"
+            style={{ background: '#F68C8C', borderColor: '#F68C8C', color: 'black' }}
+          >
+            Add Danger Zone
+          </Button>,
+          <Button
+            type="primary"
+            shape="round"
+            size="large"
+            style={{ background: '#F6C58C', borderColor: '#F6C58C', color: 'black' }}
+          >
+            Add Support Zone
+          </Button>,
         ]
       : [],
     menuHeaderRender: undefined,
