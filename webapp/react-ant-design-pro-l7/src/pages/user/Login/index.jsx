@@ -80,8 +80,9 @@ const Login = () => {
         {SelectLang && <SelectLang />}
       </div>
       <div className={styles.content}>
+        {/* <img src="../logo.png" alt="Soteria Logo" /> */}
         <LoginForm
-          // logo={<img alt="logo" src="/logo.svg" />}
+          // logo={<img alt="Soteria Logo" src="../logo.png" width="500px" />}
           title="Soteria"
           subTitle={intl.formatMessage({
             id: 'pages.layouts.userLayout.title',
@@ -138,7 +139,7 @@ const Login = () => {
                 }}
                 placeholder={intl.formatMessage({
                   id: 'pages.login.username.placeholder',
-                  defaultMessage: '用户名: admin or user',
+                  defaultMessage: '用户名: admin@nadma.gov.my',
                 })}
                 rules={[
                   {
@@ -160,7 +161,7 @@ const Login = () => {
                 }}
                 placeholder={intl.formatMessage({
                   id: 'pages.login.password.placeholder',
-                  defaultMessage: '密码: ant.design',
+                  defaultMessage: '密码: nadma1234',
                 })}
                 rules={[
                   {
