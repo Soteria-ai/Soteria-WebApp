@@ -6,8 +6,8 @@
 ## Web App React
 
 ### Demo Credentials<br/>
-Username: admin<br/>
-Password: 1234
+Username: admin@nadma.gov.my<br/>
+Password: nadma1234
 
 ### Locate folder directory
 
